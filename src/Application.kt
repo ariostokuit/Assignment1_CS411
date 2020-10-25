@@ -25,7 +25,7 @@ fun Application.module(testing: Boolean = false) {
     routing{
         this.get("/ClaimService/add"){
             println("HTTP message is using GET method with /get")
-            val uuid = UUID.randomUUID()
+            val uuid = UUID.randomUUID() //generate a random UUID
             //val uuid : String? = call.request.queryParameters["uuid"]
             val title : String? = call.request.queryParameters["title"]
             val date : String? = call.request.queryParameters["date"]
